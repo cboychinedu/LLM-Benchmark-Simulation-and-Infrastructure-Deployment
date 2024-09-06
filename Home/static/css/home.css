@@ -1,0 +1,55 @@
+* {
+    margin: 0px; 
+    padding: 0px; 
+    font-family: 'Poppins';
+}
+body {
+    font-family: 'Poppins';
+}
+.mainContainer {
+    margin: auto;
+    margin-top: 100px;
+    width: fit-content;
+    padding: 30px; 
+}
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.dataPoints {
+    margin-top: -25px;
+}
+.inputForm {
+    height: 3em;
+    padding-left: 17px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #bdb7b7;
+    margin-right: 20px;
+}
+.benchmarkBtnDiv {
+    margin-top: 11px;
+}
+.benchmarkBtn {
+    height: 39px;
+    width: 213px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+.reloadBtn {
+    width: 14em;
+    height: 37px;
+    margin-left: 7px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #a04c4c;
+    font-weight: bold;
+}
+.chartDiv {
+    margin-top: 20px;
+}

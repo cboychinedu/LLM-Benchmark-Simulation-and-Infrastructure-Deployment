@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('.static', filename='css/home.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Adding the main container div -->
+     <div class="mainContainer">
+        <h2> 
+            Generate data Here... 
+        </h2> 
+
+        <!-- Adding the form for geneating data -->
+         <div class="inputContainer"> 
+            <div> 
+                <input type="text" placeholder="Type your llm model" class="inputForm"/> 
+            </div>
+            <div>
+                <select name="llmModel" id="llmModel" class="inputForm"> 
+                    <option value="gpt-4o"> GPT-4o </option>
+                    <option value="llama3.1"> Llama 3.1 405 </option>
+                    <option value="claude3.5"> Claude 3.5 Sonnet </option>
+                </select>
+            </div>
+            <div> 
+                <select name="metrics" id="metrics" class="inputForm">
+                    <option value="TTFT"> Time to First Token (TTFT) </option>
+                    <option value="TPS"> Tokens Per Second (TPS) </option>
+                    <option value="e2e_latency"> End-to-End Request Latency (e2e_latency)</option>
+                    <option value="RPS"> Requests Per Second (RPS) </option>
+                </select>
+            </div>
+
+            <div class="dataPoints"> 
+                <label> Data Points </label> <br> 
+                <input id="dataPoints" type="text" placeholder="Data Points..." class="inputForm"/> 
+            </div>
+         </div>
+
+         <!-- Benchmark button -->
+          <div class="benchmarkBtnDiv">
+            <button class="benchmarkBtn" id="benchmarkBtn"> Benchmark </button>
+            <button class="reloadBtn" id="reloadBtn"> Reload </button>
+          </div>
+
+          <!-- Graph div -->
+           <div class="chartDiv">
+                <canvas id="myChart"> </canvas>
+           </div>
+
+     </div>
+
+    <!-- Adding the javascript  -->
+    <script src="{{ url_for('.static', filename='js/home.js') }}"></script>
+</body>
+</html>
