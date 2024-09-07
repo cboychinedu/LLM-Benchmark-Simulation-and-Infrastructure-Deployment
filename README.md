@@ -25,4 +25,4 @@
 - http://localhost:3001
 
 ### Generate data for different llm models 
-<p> Select your option, and click on the benchmark button to generate data and save the data into an sqlite3 database </p>
+<p> Select your option, and click on the <b>benchmark</b> button to generate data and save the data into an sqlite3 database </p>
