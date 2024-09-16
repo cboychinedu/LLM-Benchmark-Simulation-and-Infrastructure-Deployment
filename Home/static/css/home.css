@@ -53,3 +53,7 @@ body {
 .chartDiv {
     margin-top: 20px;
 }
+#myChart {
+    height: 491px;
+    width: 1087px;
+}

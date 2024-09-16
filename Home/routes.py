@@ -19,8 +19,8 @@ def Home():
         return render_template("Home.html")
 
     # Post request
-    elif request.method == "POST":
-        return jsonify({"message": "POst request"})
+    # elif request.method == "POST":
+    #     return jsonify({"message": "POst request"})
 
 
 # Simulate data
